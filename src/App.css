@@ -78,14 +78,27 @@ body {
   color: var(--primary-navy);
 }
 
-/* Hero Section */
+/* Enhanced Hero Section */
 .hero {
-  background: var(--gradient-bg);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, #2C5282 50%, var(--secondary-gold) 100%);
   color: var(--white);
   padding: 120px 20px 60px;
   display: flex;
   align-items: center;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: 1;
 }
 
 .hero-content {
@@ -95,6 +108,114 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Why Choose Section with Background */
+.why-choose {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(27, 54, 93, 0.9), rgba(27, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop&q=80') center/cover;
+  color: var(--white);
+}
+
+.why-choose h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.benefit {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.benefit h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.benefit p {
+  color: var(--white);
+  opacity: 0.9;
+}
+
+/* How It Works Section with Background */
+.how-it-works {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(212, 175, 55, 0.9), rgba(212, 175, 55, 0.9)), url('https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=800&fit=crop&q=80') center/cover;
+  color: var(--primary-navy);
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 3rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(27, 54, 93, 0.1);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(27, 54, 93, 0.2);
+}
+
+.step-number {
+  background: var(--primary-navy);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.step h3 {
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+}
+
+.step p {
+  color: var(--dark-gray);
 }
 
 .hero h1 {
