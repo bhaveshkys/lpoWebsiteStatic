@@ -66,12 +66,12 @@ function App() {
     <>
       {/* Navigation */}
       <nav className="bg-white shadow-lg fixed w-full z-50 top-0">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-5">
+          <div className="flex justify-between items-center py-2">
           <img 
               src="/LexievoLPO.png" 
               alt="Lexievo LPO" 
-              className="h-8 md:h-12 w-auto brightness-0 saturate-100"
+              className="h-10 md:h-16 w-auto brightness-0 saturate-100"
             />
             
             {/* Desktop Navigation */}
@@ -719,11 +719,11 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <p className="text-gray-700">contact@lexievolpo.com</p>
+                      <p className="text-gray-700">info@lexievolpo.com</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
+                 {/*  <div className="flex items-center space-x-3">
                     <div className="bg-blue-900 text-white p-2 rounded-lg">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -733,7 +733,7 @@ function App() {
                       <p className="font-semibold text-gray-900">Phone</p>
                       <p className="text-gray-700">+1 (555) 123-4567</p>
                     </div>
-                  </div>
+                  </div> */}
                   
                   <div className="flex items-center space-x-3">
                     <div className="bg-blue-900 text-white p-2 rounded-lg">
